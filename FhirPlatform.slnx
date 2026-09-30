@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Fhir.Api/Fhir.Api.csproj" />
+    <Project Path="src/Fhir.Application/Fhir.Application.csproj" />
+    <Project Path="src/Fhir.Domain/Fhir.Domain.csproj" />
+    <Project Path="src/Fhir.Infrastructure/Fhir.Infrastructure.csproj" />
+    <Project Path="src/Fhir.Worker/Fhir.Worker.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Fhir.IntegrationTests/Fhir.IntegrationTests.csproj" />
+    <Project Path="tests/Fhir.UnitTests/Fhir.UnitTests.csproj" />
+  </Folder>
+</Solution>

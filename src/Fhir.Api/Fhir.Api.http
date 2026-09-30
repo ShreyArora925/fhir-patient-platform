@@ -1,0 +1,6 @@
+@Fhir.Api_HostAddress = http://localhost:5135
+
+GET {{Fhir.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
