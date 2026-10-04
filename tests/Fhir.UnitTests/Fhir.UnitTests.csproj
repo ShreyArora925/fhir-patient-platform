@@ -19,8 +19,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\..\samples\hl7\*.hl7" LinkBase="samples\hl7" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\src\Fhir.Domain\Fhir.Domain.csproj" />
     <ProjectReference Include="..\..\src\Fhir.Application\Fhir.Application.csproj" />
+    <ProjectReference Include="..\..\src\Fhir.Infrastructure\Fhir.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

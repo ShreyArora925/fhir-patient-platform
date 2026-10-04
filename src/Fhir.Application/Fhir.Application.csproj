@@ -4,6 +4,10 @@
     <ProjectReference Include="..\Fhir.Domain\Fhir.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Hl7.Fhir.R4" Version="6.6.0" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
