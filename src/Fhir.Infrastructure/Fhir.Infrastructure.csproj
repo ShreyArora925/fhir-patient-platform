@@ -2,11 +2,17 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Fhir.Application\Fhir.Application.csproj" />
+    <ProjectReference Include="..\Fhir.Domain\Fhir.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.21.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="10.0.10" />
     <PackageReference Include="NHapi.Base" Version="3.2.3" />
     <PackageReference Include="NHapi.Model.V25" Version="3.2.4" />
+    <PackageReference Include="SQLitePCLRaw.lib.e_sqlite3" Version="2.1.13" />
   </ItemGroup>
 
   <PropertyGroup>

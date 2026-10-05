@@ -1,6 +1,16 @@
 @Fhir.Api_HostAddress = http://localhost:5135
+# Paste a token from: dotnet user-jwts create --project src/Fhir.Api --role Clinician --claim hospital=TGH
+@token = paste-token-here
 
-GET {{Fhir.Api_HostAddress}}/weatherforecast/
-Accept: application/json
+POST {{Fhir.Api_HostAddress}}/hl7/messages
+Content-Type: text/plain
+X-Api-Key: dev-tgh-ingest-key
+
+< ../../samples/hl7/ADT_A01.hl7
+
+###
+
+GET {{Fhir.Api_HostAddress}}/Patient
+Authorization: Bearer {{token}}
 
 ###
